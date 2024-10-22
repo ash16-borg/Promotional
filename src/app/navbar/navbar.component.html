@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="logo" src="assets/images/logon.png">
+    MOONWATCH
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-center w-100">
+        <li class="nav-item dropdown highlightTextIn">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="scrollToAboutGame()">
+           About game 
+          </a>
+        </li>
+        <li class="nav-item dropdown highlightTextIn">
+          <a class="nav-link" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="scrollToMaps()">
+            Maps
+          </a>
+          </li>
+          <li class="nav-item dropdown  highlightTextIn">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink3" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="scrollToCharacter()">
+             characters
+            </a>
+          </li>
+          <li class="nav-item dropdown  highlightTextIn">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink4" role="button" data-bs-toggle="dropdown" aria-expanded="false" (click)="scrollToWhatsNew()">
+             whats new!
+            </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarRegisterDropdown" role="button" data-bs-toggle="modal" data-bs-target="#registerModal">
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form class="form">
+            <p class="title">Register</p>
+            <p class="message">Signup now and get full access to our app.</p>
+            <div class="flex">
+              <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Firstname</span>
+              </label>
+              <label>
+                <input required="" placeholder="" type="text" class="input">
+                <span>Lastname</span>
+              </label>
+            </div>
+            <label>
+              <input required="" placeholder="" type="email" class="input">
+              <span>Email</span>
+            </label>
+            <label>
+              <input required="" placeholder="" type="password" class="input">
+              <span>Password</span>
+            </label>
+            <label>
+              <input required="" placeholder="" type="password" class="input">
+              <span>Confirm password</span>
+            </label>
+            <button class="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
